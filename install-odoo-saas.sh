@@ -126,7 +126,7 @@
 
          # try to guess about the system
          WK_PLATFORM="i386"
-         if [[ "$PLATFORM" == "x86_64" ]]
+         if [[ "$PLATFORM" == "unknown" || "$PLATFORM" == "x86_64" ]]
          then
              WK_PLATFORM="amd64"
          fi
